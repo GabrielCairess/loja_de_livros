@@ -1,6 +1,6 @@
 class Biblioteca
   def initialize
-    @livros = {} # Inicializa com um hash
+    @livros = {}
   end
   
   def adiciona(livro)
