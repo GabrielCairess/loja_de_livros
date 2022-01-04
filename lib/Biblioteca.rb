@@ -1,5 +1,6 @@
-class Biblioteca
+class Set
 attr_reader :livros
+  include Enumerable
 
   def initialize
     @livros = []
@@ -18,6 +19,10 @@ attr_reader :livros
 
   def livros_por_categoria(categoria)
     @livros.select { |livro| livro.categoria == categoria }
+  end
+
+  def each
+    livros.each { |livro| yield livro }
   end
 
   private 
