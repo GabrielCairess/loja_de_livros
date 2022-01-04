@@ -16,8 +16,9 @@ class Livro
   end
 
   def eql?(outro_livro)
-    @isbn == outro_livro.isbnCasa do Código Capítulo 5. Ruby e a programação funcional
+    @isbn == outro_livro.isbnCasa
   end
+
   def hash
     @isbn.hash
   end
