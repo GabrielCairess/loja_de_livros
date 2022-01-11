@@ -1,5 +1,4 @@
 #encoding: utf-8
-
 module ActiveFile
   def included(base)
     base.extend ClassMethods
